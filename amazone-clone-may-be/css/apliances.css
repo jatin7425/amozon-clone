@@ -1,0 +1,86 @@
+#body {
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 5px 10px black;
+    width: 100%;
+}
+
+#body #firstblock {
+    margin-left: 20px;
+    width: 55%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.mainbody {
+    display: flex;
+}
+
+.mainbody #filter {
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+}
+
+.mainbody #filter hr {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.mainbody #filter h3 {
+    margin-top: 5px;
+    margin-left: 10px;
+}
+
+.mainbody #filter p {
+    margin-left: 20px;
+}
+
+.mainbody #filter .review {
+    display: flex;
+    margin-top: 5px;
+    margin-left: 10px;
+}
+
+.mainbody #filter .review a:hover {
+    color: red;
+} 
+
+.mainbody #filter .review a {
+    display: inline;
+    text-decoration: none;
+    color: black;
+}
+
+.mainbody #filter input {
+    margin-right: -15px;
+}
+
+#filter >a {
+    width: fit-content;
+    margin-top: 5px;
+    margin-left: 15px;
+    text-decoration: none;
+    color: black;
+}
+
+#filter >a:hover {
+    color: blue;
+} 
+
+#filter button {
+    width: 25%;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 35px 0px  20px 20px;
+}
+
+.brand {
+    display: flex;
+    margin-left: 10px;
+    margin-top: 5px;
+}
+
+.mainbody #product {
+    width: 80%;
+}

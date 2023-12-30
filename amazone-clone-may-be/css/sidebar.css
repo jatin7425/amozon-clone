@@ -1,0 +1,129 @@
+/* side bar */
+
+.sidebar {
+    background-color: rgb(25, 49, 74);
+    position: fixed;
+    top: 60px;
+    width: 250px;
+    color: white;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 1);
+    height: 100vh;
+    transition: 1s ease;
+    display: none;
+    z-index: 100;
+}
+
+#cancel i {
+    font-size: 40px;
+    margin: 10px  0px 10px 200px;
+    cursor: pointer;
+}
+
+.sidebar .profile {
+    height: 200px;
+    margin: 5px;
+    background-color: rgb(25, 49, 74);
+    box-shadow: 0 0px 10px rgba(0, 0, 0, 1);
+}
+
+.sidebar .profile img {
+    border-radius: 81px;
+    margin: 24px 45px;
+}
+
+.side-bar-dropdown {
+    background-color: rgb(25, 49, 74);
+    padding: 1px;
+}
+
+.side-bar-dropdown::-webkit-scrollbar {
+    display: block;
+}
+
+.side-bar-dropdown h2 {
+    cursor: pointer;
+    box-shadow: 0 0px 10px rgba(0, 0, 0, 1);
+    padding: 5px;
+    margin: 5px;
+    z-index: 1;
+}
+
+.dropdown-menu {
+    width: 250px;
+    transition: 1s ease;
+    display: none;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.dropdown-menu li {
+    list-style: none;
+    padding: 15px;
+    margin: 3px;
+    background-color: rgb(25, 49, 74);
+    box-shadow: 0 0px 5px rgba(0, 0, 0, 1);
+    position: relative;
+    margin-right: 11px;
+    margin-left: 11px;
+}
+
+.dropdown-menu li a {
+    text-decoration: none;
+    color: white;
+}
+
+.bottom {
+    position: absolute;
+}
+
+/* different options */
+
+#category {
+    max-height: 40vh;
+    overflow-y: scroll;
+}
+
+#category::-webkit-scrollbar {
+    display: block;
+    width: 4px;
+    margin-left: 1px;
+}
+
+#category::-webkit-scrollbar-thumb {
+    background:  rgb(17, 40, 65);
+    box-shadow: 0 0px 2px rgba(0, 0, 0, 1);
+}
+
+.categoryshow {
+    margin: -10px 0px;
+    transition: 1s ease;
+    display: block;
+}
+
+.collectionshow {
+    margin: -10px 0px;
+    transition: 1s ease;
+    display: block;
+}
+
+.showcat {
+    display: block;
+}
+
+.showcol {
+    display: block;
+}
+
+.show {
+    display: block;
+}
+
+.hide {
+    display: none;
+}
+
+/* fixedside baar */
+
+.fixed {
+    top: 0;
+}

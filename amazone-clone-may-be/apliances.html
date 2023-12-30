@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jatin Mearch</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/sidebar.css">
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/apliances.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+
+<body>
+    <section id="body" onscroll="sidebarfix()">
+        <!-- header part -->
+        <header>
+            <section class="header">
+                <h1>Richer's.in</h1>
+                <div>
+                    <img src="image/icons/location.png" alt="" srcset="" width="15px" align="left"
+                        style="margin-top: 19px;">
+                    <h4 class="address">Address</h4>
+                    <p class="para">Enter your address <i class="fas fa-caret-down" style="color: #f2f2f2;"></i></p>
+                </div>
+                <div class="search-section">
+                    <div>
+                        <input type="text" placeholder="Search for your requirment">
+                    </div>
+                    <i class="fas fa-search" style="color: #000;"></i>
+                </div>
+                <div class="drop-down">
+                    <img src="image/tiranga.jpg" width="30px">
+                    <select class="language">
+                        <option value="english"><a href="#">English</a></option>
+                        <option value="hindi"><a href="#">Hindi</a></option>
+                        <option value="marathi"><a href="#">Marathi</a></option>
+                        <option value="kannad"><a href="#">Kannad</a></option>
+                        <option value="tamil"><a href="#">Tamil</a></option>
+                        <option value="telegu"><a href="#">Telegu</a></option>
+                    </select>
+                </div>
+
+                <!-- loginarea -->
+
+                <!-- login button -->
+                <div class="login">
+                    <a onclick="signinshow()">
+                        <p class="sign">Hello,sign in</p>
+                        <h4>Account & lists <i class="fas fa-caret-down"></i></h4>
+                    </a>
+                    <!-- button end -->
+
+                    <!-- Log-in box  -->
+
+                    <div class="loginbox hidelog" id="loginbox">
+                        <h1 class="topic"><i class="fas fa-times" style="color: #ffffff;" onclick="invisible()"></i>
+                            Log-in
+                        </h1>
+                        <div class="logbox">
+                            <form>
+                                <div class="loginform">
+                                    <label>Email Id</label>
+                                    <input type="email" name="email" id="email" required>
+                                    <label>Password</label>
+                                    <input type="password" name="password" id="password" required>
+                                </div>
+                                <p>don't have account?</p><a href="#" onclick="signup()">click here</a>
+                                <input type="submit" name="Log-in" />
+                            </form>
+                        </div>
+                    </div>
+
+                    <!-- sign-up box -->
+
+                    <div class="signupbox hidelog indexing" id="signupbox">
+                        <h1 class="topic"><i class="fas fa-times" style="color: #ffffff;"
+                                onclick="invisiblesignup()"></i>
+                            Register</h1>
+                        <div class="logbox">
+                            <form>
+                                <div class="loginform signupform">
+                                    <input type="text" name="name" id="firstname" placeholder="Your First-Name"
+                                        required>
+
+                                    <input type="text" name="name" id="secondname" placeholder="Your Last-Name"
+                                        required>
+
+                                    <input type="email" name="email" id="email" required
+                                        placeholder="Enter your email.">
+
+                                    <input type="tel" name="Phone-no" id="Phone-no" required
+                                        placeholder="Enter your phone no.">
+
+                                    <input type="password" name="password" id="password" required
+                                        placeholder="Create a password">
+
+                                    <input type="password" name="password" id="password" required
+                                        placeholder="Conferm a password">
+                                </div>
+                                <p>already have account?</p><a href="#" onclick="log()">click here</a>
+                                <input type="submit" name="Sign-up" id="signupbtn" />
+                            </form>
+                        </div>
+                    </div>
+
+                    <!-- script-link -->
+                    <script src="javascript/singin.js"></script>
+
+                </div>
+
+                <!-- loginarea-end -->
+
+                <div class="logo-container">
+                    <div class="cart-icon">
+                        <a href="#">
+                            <span class="cart-count">0</span>
+                            <i class="fas fa-shopping-cart">cart</i>
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- navigation bar -->
+
+            <section class="menu">
+                <div class="menulist">
+                    <a href="#" onclick="sidebar()"><i class="fas fa-bars"> All</i></a>
+
+                    <div class="sidebar fixed" id="sidebar">
+                        <div id="cancel" onclick="hide()">
+                            <i class="fas fa-times" style="color: #ffffff;"></i>
+                        </div>
+                        <div class="profile">
+                            <img src="image/profile.jpg" alt="profilepic" width="150px">
+                        </div>
+                        <div class="side-bar-dropdown">
+                            <h2 onclick="category()" onclick="listhide()">Category</h2>
+                            <ul class="dropdown-menu" id="category" class="category" onclick="category()"
+                                onclick="listhide()">
+                                <li><a href="#">Home decoration</a></li>
+                                <li><a href="#">Home apliances</a></li>
+                                <li><a href="#">Kitchen</a></li>
+                                <li><a href="#">Electronics</a></li>
+                                <li><a href="#">Fashion</a></li>
+                                <li><a href="#">Spare-parts</a></li>
+                                <li><a href="#">healt-care</a></li>
+                                <li><a href="#">Lenscart</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="side-bar-dropdown">
+                            <h2 onclick="collection()" onclick="listhide()">Collection</h2>
+                            <ul class="dropdown-menu" id="collection" class="collection" onclick="collection()"
+                                onclick="listhide()">
+                                <li><a href="#">Whish-list</a></li>
+                                <li><a href="#">Favorate</a></li>
+                                <li><a href="#">To-Buy</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="side-bar-dropdown" class="bottom">
+                            <h2>Setting</h2>
+                        </div>
+                    </div>
+
+                    <script src="javascript/hamberger.js"></script>
+
+                    <a href="index.html"><i class="fas fa-home">Home</i></a>
+                    <a href="#"><i class="fas fa-store"> Sell</i></a>
+                    <a href="#"><i class="fas fa-user"> Best sellers</i></a>
+                    <a href="#"><i class="fas fa-lightbulb"> Electronics</i></a>
+                    <a href="#"><i class="fas fa-mobile"> Mobiles</i></a>
+                    <a href="#"><i class="fas fa-laptop"> Laptops</i></a>
+                    <a href="#"><i class="fas fa-utensils"> Home & Kitchen</i></a>
+                    <a href="#"><i class="fas fa-desktop"> Computers</i></a>
+                    <a href="#"><i class="fas fa-book"> Books</i></a>
+                    <a href="#"><i class="fas fa-book"> Heath-care</i></a>
+                </div>
+            </section>
+        </header>
+
+        <!-- space bar -->
+
+        <div class="space" id="scrolltop">
+
+        </div>
+
+        <div id="body">
+            <br>
+            <div id="firstblock">
+                <p><i class="fas fa-filter" style="color: #000000;"></i> Filters</p>
+                <p>results for your search.</p>
+            </div><br>
+            <hr>
+            <div class="mainbody">
+                <div id="filter">
+                    <h1>category</h1>
+                    <h3>Home & Kitchen</h3>
+                    <a href="#">Electric Kettles</a>
+                    <a href="#">Tandoors & Grills</a>
+                    <a href="#">Mini Food Processors & Choppers</a>
+                    <a href="#">Egg Boilers</a>
+                    <a href="#">Mixer Grinders</a>
+                    <a href="#">Air Fryers</a>
+                    <h3>Home Improvement</h3>
+                    <br>
+                    <hr>
+                    <br>
+                    <h3>Customers Review</h3>
+                    <div class="review">
+                        <i class="fas fa-star" style="color: #ff9500;"></i>
+                        <i class="fas fa-star" style="color: #ff9500;"></i>
+                        <i class="fas fa-star" style="color: #ff9500;"></i>
+                        <i class="fas fa-star" style="color: #ff9500;"></i>
+                        <i class="far fa-star" style="color: #ff9500;"></i>
+                        <a href="#">& above</a>
+                    </div>
+                    <div class="review">
+                        <i class="fas fa-star" style="color: #ff9500;"></i>
+                        <i class="fas fa-star" style="color: #ff9500;"></i>
+                        <i class="fas fa-star" style="color: #ff9500;"></i>
+                        <i class="far fa-star" style="color: #ff9500;"></i>
+                        <i class="far fa-star" style="color: #ff9500;"></i>
+                        <a href="#">& above</a>
+                    </div>
+                    <div class="review">
+                        <i class="fas fa-star" style="color: #ff9500;"></i>
+                        <i class="fas fa-star" style="color: #ff9500;"></i>
+                        <i class="fas fa-star" style="color: #ff9500;"></i>
+                        <i class="far fa-star" style="color: #ff9500;"></i>
+                        <i class="far fa-star" style="color: #ff9500;"></i>
+                        <a href="#">& above</a>
+                    </div>
+                    <div class="review">
+                        <i class="fas fa-star" style="color: #ff9500;"></i>
+                        <i class="fas fa-star" style="color: #ff9500;"></i>
+                        <i class="far fa-star" style="color: #ff9500;"></i>
+                        <i class="far fa-star" style="color: #ff9500;"></i>
+                        <i class="far fa-star" style="color: #ff9500;"></i>
+                        <a href="#">& above</a>
+                    </div>
+                    <div class="review">
+                        <i class="fas fa-star" style="color: #ff9500;"></i>
+                        <i class="far fa-star" style="color: #ff9500;"></i>
+                        <i class="far fa-star" style="color: #ff9500;"></i>
+                        <i class="far fa-star" style="color: #ff9500;"></i>
+                        <i class="far fa-star" style="color: #ff9500;"></i>
+                        <a href="#">& above</a>
+                    </div>
+                    <br>
+                    <h3>Brand</h3>
+                    <div class="brand"><input type="checkbox" name="brand">
+                        <p>Pigeon</p>
+                    </div>
+                    <div class="brand"><input type="checkbox" name="brand">
+                        <p>Prestige</p>
+                    </div>
+                    <div class="brand"><input type="checkbox" name="brand">
+                        <p>KENT</p>
+                    </div>
+                    <div class="brand"><input type="checkbox" name="brand">
+                        <p>PHILIPS</p>
+                    </div>
+                    <div class="brand"><input type="checkbox" name="brand">
+                        <p>Borosil</p>
+                    </div>
+                    <div class="brand"><input type="checkbox" name="brand">
+                        <p>Lifelong</p>
+                    </div>
+                    <div class="brand"><input type="checkbox" name="brand">
+                        <p>Havells</p>
+                    </div>
+                    <div class="brand"><input type="checkbox" name="brand">
+                        <p>Wipro</p>
+                    </div>
+                    <div class="brand"><input type="checkbox" name="brand">
+                        <p>Agaro</p>
+                    </div>
+                    <div class="brand"><input type="checkbox" name="brand">
+                        <p>Rico</p>
+                    </div>
+                    <div class="brand"><input type="checkbox" name="brand">
+                        <p>iBELL</p>
+                    </div>
+                    <div class="brand"><input type="checkbox" name="brand">
+                        <p>Wonderchef</p>
+                    </div>
+                    <br>
+                    <h3>Price</h3>
+                    <a href="#">Under 500</a>
+                    <a href="#">500 - 1000</a>
+                    <a href="#">1000 - 2000</a>
+                    <a href="#">2000 - 3000</a>
+                    <a href="#">3000 above</a>
+                    <button>Submit</button>
+                </div>
+                <hr>
+                <div id="product">
+                    <div class="productbox">
+                        <img src="image/offerstock/heater.jpg" alt="" srcset="" width="20%">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <div id="backtop">
+                <a href="#" id="scrolltopbtn">Back to Top <br> <i class="fas fa-arrow-up"
+                        style="color: #fafcff;"></i></a>
+            </div>
+
+            <br>
+            <div class="rowf">
+                <table>
+                    <tr>
+                        <th>
+                            <h2>Get to know us</h2>
+                            <hr>
+                        </th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="block">
+                                <a href="#">About - Us</a>
+                                <a href="#">Carrer with Us</a>
+                                <a href="#">Our Press</a>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+                <table>
+                    <tr>
+                        <th>
+                            <h2>Our social handles</h2>
+                            <hr>
+                        </th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="block">
+                                <a href="#">Facebook</a>
+                                <a href="#">Twitter</a>
+                                <a href="#">Instagram</a>
+                                <a href="#">Youtube</a>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+                <table>
+                    <tr>
+                        <th>
+                            <h2>Let us help you</h2>
+                            <hr>
+                        </th>
+                    </tr>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="block">
+                                <a href="#">Chat with Assitance</a>
+                                <a href="#">Contact - Us</a>
+                                <a href="#">Feedback</a>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <hr id="hr">
+            <div class="secondpart">
+                <div class="logo">
+                    <h1><a href="index.html">Richer's.in</a></h1>
+                    <select class="lang">
+                        <option value="english"><a href="#">English</a></option>
+                        <option value="hindi"><a href="#">Hindi</a></option>
+                        <option value="marathi"><a href="#">Marathi</a></option>
+                        <option value="kannad"><a href="#">Kannad</a></option>
+                        <option value="tamil"><a href="#">Tamil</a></option>
+                        <option value="telegu"><a href="#">Telegu</a></option>
+                    </select>
+                </div>
+            </div>
+            <div class="mostbottom">
+                <p><i class="far fa-copyright" style="color: #ffffff;">All rights reserved.</i></p>
+            </div>
+        </footer>
+    </section>
+</body>
+<script src="javascript/gotop.js"></script>
+<script src="javascript/cart.js"></script>
+
+</html>

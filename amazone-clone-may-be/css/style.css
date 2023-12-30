@@ -1,0 +1,326 @@
+/* css reset*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+i {
+    color: white;
+}
+
+body {
+    background-color: antiquewhite;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+#body {
+    min-width: 1536px;
+    max-width: 100%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 100%;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+}
+
+.header {
+    background-color: black;
+    display: flex;
+    color: white;
+}
+
+.header h1 {
+    margin: auto 15px;
+    font-size: 35px;
+}
+
+.header div {
+    margin: 5px;
+}
+
+/* search-section */
+
+.header div .address {
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+.header div .para {
+    margin: 0 20px;
+    cursor: pointer;
+}
+
+.search-section {
+    display: flex;
+}
+
+.search-section div {
+    border: 10px;
+    left: 0;
+}
+
+.search-section div select option a {
+    font-size: 50px;
+    margin: 10px;
+}
+
+.search-section div input {
+    width: 43vw;
+    padding: 10px 0px 10px 10px;
+    font-size: 15px;
+    margin-right: -55px;
+    height: 16px;
+}
+
+.search-section i {
+    font-size: 30px;
+    margin: 5px 0;
+    width: 30px;
+    padding: 5px 5px;
+    height: 30px;
+    margin-right: 10px;
+    box-shadow: 0px 0px 10px black;
+    cursor: pointer;
+    background-color: #f2f2f2;
+    position: relative;
+    z-index: 1;
+}
+
+/* dynamic language select */
+.drop-down {
+    display: flex;
+    flex-direction: column;
+}
+
+.drop-down img {
+    margin: 5px;
+    cursor: pointer;
+}
+
+.drop-down .language {
+    border: none;
+    background-color: black;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+/* login */
+
+.login .sign {
+    margin: 9px 23px 0px 0px;
+    cursor: pointer;
+}
+
+.login a img {
+    width: 20px;
+}
+
+.login h4 {
+    display: inline;
+    cursor: pointer;
+}
+
+/* cart */
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    height: 40px;
+    margin-right: 10px;
+}
+
+.cart-icon {
+    position: relative;
+    font-size: 30px;
+}
+
+.cart-icon a {
+    color: white;
+}
+
+.cart-count {
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    padding: 4px;
+    font-size: 12px;
+}
+
+/* menusection */
+
+.menu {
+    display: flex;
+    background: rgb(25, 49, 74);
+}
+
+.menulist a {
+    font-size: 20px; 
+}
+
+.menulist a i:hover {
+    background-color: rgb(9, 17, 26);
+}
+
+.menulist a i {
+    padding: 10px 15px;
+}
+
+/* Space bar */
+
+.space {
+    height: 102px;
+}
+
+/* Bodypart */
+
+.body {
+    width: 90%;
+    margin: 10px auto;
+    display: contents;
+}
+
+.slider {
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+}
+
+.slider img {
+    width: 100%;
+    cursor: pointer;
+}
+
+.row {
+    display: flex;
+    margin: 20px 0;
+}
+
+.offerblock { 
+    background-color: rgb(253, 216, 169);   
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin: 20px;
+    border-radius: 14px;
+    width: 345px;
+    cursor: pointer;
+}
+
+
+.offerblock h1 {
+    text-align: center;
+    padding: 11px;
+    background-color: rgb(255, 194, 115);
+    border-radius: 14px 14px 0 0;
+}
+
+
+.offerblock a {
+    float: left;
+}
+
+.offerimg {
+    margin: 6px;
+    width: 160px;
+    height: 160px;
+    align-items: center;
+    border-radius: 7px;
+    display: flex;
+    flex-wrap: wrap;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background-color:rgb(255, 255, 255);
+}
+
+/* footersection */
+
+footer {
+    color: white;
+    background-color: rgb(25, 49, 74);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    position: absolute;
+}
+
+footer #backtop {
+    background-color: rgba(14, 28, 43, 0.861);
+    padding: 10px 45%;
+}
+
+footer #backtop i {
+    font-size: 25px;
+}
+
+footer #backtop a {
+    display: flex;
+    text-decoration: none;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+    margin: 0px 10px;
+    cursor: pointer;
+}
+
+footer #hr {
+    width: 100%;
+    box-shadow: inset 0 0px 10px black;
+}
+
+footer .rowf {
+    display: flex;
+    justify-content: space-between;
+    margin: 100px 350px;
+}
+
+.block a{
+    display: block;
+    text-decoration: none;
+    color: white;
+}
+
+.secondpart .logo {
+    display: flex;
+    justify-content: space-around;
+    margin: 40px auto;
+    width: 650px;
+    font-size: 31px;
+    font-family: cooper;
+}
+
+.secondpart .logo a {
+    text-decoration: none;
+    color: white;
+}
+
+.secondpart .logo select {
+    padding: 5px 30px;
+    font-size: 20px;
+    background-color: rgb(25, 49, 74);
+    color: white;
+    border: 3px solid;
+    cursor: pointer;
+}
+
+footer .mostbottom {
+    background-color: rgb(35, 35, 35);
+}
+
+footer .mostbottom p {
+    margin: 20px 42%;
+    font-size: 25px;
+}

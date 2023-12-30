@@ -1,0 +1,138 @@
+#loginbox {
+    position: absolute;
+    background-color: antiquewhite;
+    width: max-content;
+    margin: 10% -30%;
+    border: 2px solid rgb(25, 49, 74);
+    box-shadow: 0 100px 200px rgba(0, 0, 0, 1);
+    position: fixed;
+    z-index: 100;
+}
+
+#loginbox h1 {
+    text-align: center;
+    padding: 10px;
+    margin: 0;
+    background-color: rgb(34, 64, 96);
+    color: white;
+    border-bottom: 2px solid rgb(34, 64, 96);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 1);
+}
+
+#loginbox h1 i {
+    margin-right: 40px;
+    cursor: pointer;
+}
+
+#loginbox h1 i:active {
+    margin-right: 40px;
+    font-size: 30px;
+}
+
+#loginbox h1 i:visited {
+    font-size: 50px;
+}
+
+.logbox {
+    padding: 10px;
+}
+
+.logbox input {
+    display: block;
+    width: 200px;
+    padding: 10px;
+    margin: 10px;
+    box-shadow: 0 0.5px 1px rgba(0, 0, 0, 1);
+    border-radius: 5px;
+}
+
+.logbox input[type=email] {
+    margin-top: 10px;
+}
+
+.logbox input[type=submit] {
+    width: 90px;
+    display: block;
+    padding: 9.5px 0px;
+    font-size: 20px;
+    margin: 19px 0px 7px 142px;
+    border: none;
+    background-color: rgb(34, 64, 96);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 1);
+    color: white;
+    cursor: pointer;
+}
+
+.logbox input[type=password] {
+    margin-bottom: 20px;
+}
+
+.logbox input[type=text] {
+    display: inline;
+    width: 150px;
+}
+
+.logbox p {
+    display: inline;
+    margin-left: 15px;
+    color: black;
+}
+
+.loginform label {
+    font-size: 20px;
+    font-weight: 1000;
+    margin: 0px 0px 0px 12px;
+    color: rgb(34, 64, 96);
+}
+
+/* sign-up */
+
+#signupbox {
+    position: absolute;
+    background-color: antiquewhite;
+    width: max-content;
+    margin: 7% -36%;
+    border: 2px solid rgb(25, 49, 74);
+    box-shadow: 0 100px 200px rgba(0, 0, 0, 1);
+    position: fixed;
+}
+
+#signupbox h1 {
+    text-align: center;
+    padding: 10px;
+    margin: 0;
+    background-color: rgb(34, 64, 96);
+    color: white;
+    border-bottom: 2px solid rgb(34, 64, 96);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 1);
+}
+
+#signupbox h1 i {
+    margin-right: 40px;
+    cursor: pointer;
+}
+
+#signupbox h1 i:active {
+    margin-right: 40px;
+    font-size: 30px;
+}
+
+#signupbox h1 i:visited {
+    font-size: 50px;
+}
+
+.signupform input {
+    width: 350px;
+}
+
+#signupbtn {
+    margin-left: 300px;
+}
+
+.hidelog {
+    display: none;
+}
+
+.indexing {
+    z-index: 100;
+}
